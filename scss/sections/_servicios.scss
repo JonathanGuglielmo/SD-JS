@@ -1,0 +1,211 @@
+@import '../base/size';
+
+/* Servicios */
+
+.servicios {
+    text-align: center;
+    z-index: 5;
+    margin-top: 8em;
+}
+
+.servicios2 {
+    z-index: 6;
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+.disenog {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.dg {
+    box-shadow: 0 10px 6px -6px #777;
+    margin-right: 6em;
+    z-index: 2;
+    &:hover {
+        transform: scale(1.1)
+    }
+    body.dark & {
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.212);
+    }
+}
+
+.dw {
+    margin-left: -3em;
+    z-index: 2;
+    box-shadow: 0 10px 6px -6px #777;
+    &:hover {
+        transform: scale(1.1)  
+    }
+    body.dark & {
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.212);
+    }
+}
+
+.dm {
+    z-index: 2;
+    box-shadow: 0 10px 6px -6px #777;
+    margin-right: 10em;
+    &:hover {
+        transform: scale(1.1)
+    }  
+    body.dark & {
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.212);
+    } 
+}
+
+.cm {
+    z-index: 2;
+    box-shadow: 0 10px 6px -6px #777;
+    &:hover {
+        transform: scale(1.1)
+    }
+    body.dark & {
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.212);
+    }
+}
+
+.cotiza{
+    height: 5em; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 5em;    
+    text-transform: uppercase;
+    background-color: nth($colores2, 2); 
+    border-color: nth($colores2, 2); 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 27em;   
+    cursor: pointer;
+        p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;    
+        color: nth($colores1, 7);  
+        }
+        &:hover {
+        transform: scale(1.1);
+        background-color: nth($colores1, 2); 
+    }
+    body.dark & {
+        background: rgb(71, 71, 71);
+        border-color: white;
+        }
+}
+
+/* Fondo animado */
+
+.burbujas {
+    width: 100%;
+    height: 300vh;
+    bottom: -100vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    }
+
+.burbuja {
+    overflow: hidden;
+    border-radius: 50%;
+    background: nth($colores1, 2); 
+    position: absolute;
+    bottom: 100vh;
+    animation: burbujas 3s linear infinite;
+    transition: .3s ease all;
+    body.dark & {
+        background: nth($colores2, 3);
+    }
+    }
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    }
+
+.burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 4s;
+    }
+
+.burbuja:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 1.5s;
+    }
+
+.burbuja:nth-child(4) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 8s;
+    }
+
+.burbuja:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    left: 75%;
+    animation-duration: 7s;
+    }
+
+.burbuja:nth-child(6) {
+    width: 130px;
+    height: 130px;
+    left: 55%;
+    animation-duration: 7s;
+    }
+
+@keyframes burbujas {
+        0%{
+            bottom: 0;
+            opacity: .0;
+        }
+        
+        30%{
+            transform: translateX(30px);
+        }
+        
+        50%{
+            opacity: .7;
+        }
+        
+        100%{
+            bottom: 100vh;
+            opacity: .0;
+        }
+    }
+
+    #btnjQuery{
+        height: 45px; 
+        padding-left: 5px;
+        padding-right: 5px;   
+        margin-bottom: 20px; 
+        text-transform: uppercase;
+        background-color: nth($colores2, 2); 
+        border-color: nth($colores2, 2); 
+        border-style: solid; 
+        border-radius: 10px;  
+        width: 20em;   
+        cursor: pointer;
+            p{
+            color: nth($colores1, 7);  
+            }
+            &:hover {
+            transform: scale(1.1);
+            background-color: nth($colores1, 2); 
+        }
+        body.dark & {
+            background: rgb(71, 71, 71);
+            border-color: white;
+            }
+    }
+
+    #services2{
+        margin-top: -0.5em;
+    }

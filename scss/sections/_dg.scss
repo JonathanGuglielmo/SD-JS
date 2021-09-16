@@ -1,0 +1,12 @@
+@import '../base/colors';
+@import '../functions/extends';
+
+/* Diseño Gráfico */
+
+#dg {
+    @extend %flexbox4;
+}
+
+.dg-container {
+    @extend %flexbox3
+}

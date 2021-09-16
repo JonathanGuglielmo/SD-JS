@@ -1,0 +1,132 @@
+@import '../base/variables';
+@import '../base/colors';
+@import '../functions/extends';
+
+/*  MENU  */
+
+header {
+    z-index: 99999;
+    color: nth($colores1, 5); 
+    @extend %flexbox1;
+    background-color: $bg-color-lb;
+    p{
+        color: white;
+        font-size: 1.1em;
+    }
+    body.dark & {
+        background: nth($colores1, 6);
+    }
+    .container {
+        body.dark & {
+            background: nth($colores1, 6);
+        }
+    }
+    .container-fluid {
+        body.dark & {
+            background: nth($colores1, 6);
+        }
+    }
+}
+
+.bg-light {
+    z-index: 99999;
+    background-color: $bg-color-lb !important;
+    body.dark & {
+        background: nth($colores1, 6)!important;
+    }
+}
+
+.logo {
+    z-index: 99999;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    z-index: 99999;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    margin-left: -12px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    z-index: 99999;
+    display: inline-block;
+    color: nth($colores1, 5); 
+    body.dark & {
+        background: nth($colores1, 6);
+        &:hover{
+            color: rgb(197, 197, 197);
+        }
+    }
+}
+
+.dropdown-menu {
+    z-index: 99999;
+    background-color: $bg-color-lb;
+    border-color: $border-white;
+    color: nth($colores1, 5);
+    body.dark & {
+        background: nth($colores1, 6);
+    }
+}
+
+// --- Swithc --- //
+
+.switch {
+    z-index: 99999;
+    background: #444444;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #F1F1F1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active {
+        background: orange;
+        color: black;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+    i {
+        vertical-align: middle;
+    }
+    .container {
+        body.dark & {
+            background: nth($colores1, 6);
+        }
+    }
+    .container-fluid {
+        body.dark & {
+            background: nth($colores1, 6);
+        }
+    }
+}
+
+

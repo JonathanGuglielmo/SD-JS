@@ -1,0 +1,11 @@
+@import '../base/colors';
+@import '../functions/extends';
+/* Diseño Multimedia */
+
+#dm {
+    @extend %flexbox4;
+}
+
+.dm-container {
+    @extend %flexbox3;
+}

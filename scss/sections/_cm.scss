@@ -1,0 +1,12 @@
+@import '../base/colors';
+@import '../functions/list';
+@import '../functions/extends';
+
+/* Comunnity Manager */
+#cm {
+    @extend %flexbox2;
+}
+
+.cm-container {
+    @extend %flexbox3;
+}

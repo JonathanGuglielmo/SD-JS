@@ -1,0 +1,11 @@
+@import '../base/colors';
+@import '../functions/extends';
+/* Diseño Web */
+
+#dw {
+    @extend %flexbox2;
+}
+
+.dw-container {
+    @extend %flexbox3
+}

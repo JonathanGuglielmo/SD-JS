@@ -1,0 +1,71 @@
+@import '../base/colors';
+
+/* Ajustes generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.row {
+    --bs-gutter-x:0!important;
+    }
+
+
+/* Body */
+
+body {
+    overflow-x: hidden;
+    background-color: nth($colores1, 4);
+    font-size: 1.1em; 
+    transition: .3s ease all;
+    &.dark {
+        background: nth($colores1, 6);
+    }
+}
+
+.shark-logo {
+    width: 40%;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+button p {
+    display: inline;
+    align-items: center;
+}
+
+.boton {
+    box-shadow: 0 6px 6px -6px #777;
+}
+
+#shopitems {
+    margin-top:  15em;
+    background-size: cover;
+    h5 {
+        color: black;
+    }
+}
+
+#shopbuy {
+    display: grid;
+    justify-content: center;
+    #boton-confirmar{
+        margin-top: 1em;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#pago {
+    padding-bottom: 1em;
+}
+
+#pago1{
+    margin-top: 0.5em;
+    width: 12em;
+}

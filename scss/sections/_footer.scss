@@ -1,0 +1,38 @@
+@import '../functions/extends';
+/* Footer */
+
+.footer {
+    @extend %flexbox1;
+    margin-top: 2em;
+    .container-fluid { 
+        display: flex;
+        }
+}
+
+.footer-menu {
+    width: 50%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    li {
+        text-decoration: none;
+    }
+}
+
+.derechos {
+    text-align: center;
+    transition: .3s ease all;
+    body.dark & {
+        p {
+            color: white;
+        }
+    }
+}
+
+.logofooter {
+    width: 100%;
+    height: auto;
+} 
+

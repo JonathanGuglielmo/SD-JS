@@ -1,0 +1,143 @@
+@import '../base/colors';
+
+/*Formulario de contacto*/
+
+#contactform {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contact_form{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;;
+    margin-top: 2em;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: nth($colores1, 3); 
+    text-align: center;
+    body.dark & {
+        background: rgb(63, 63, 63);
+        h1 {
+            color: white;
+        }
+        h6 {
+            color: black;
+        }
+    }
+}
+
+input{
+    background-color: nth($colores1, 3);
+    width: 70em; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: nth($colores2, 2);
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    body.dark & {
+        background: rgb(63, 63, 63);
+        border-color: white;
+    }
+}
+
+textarea{
+    background-color: nth($colores1, 3);
+    width: 70em; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: nth($colores2, 2);
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+    body.dark & {
+        background: rgb(63, 63, 63);
+        border-color: white;
+    }
+}
+
+label{
+    display: block; 
+    float: center;  
+}
+
+.boton{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 4em;   
+    text-transform: uppercase;
+    background-color: nth($colores2, 2); 
+    border-color: nth($colores2, 2); 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 7em;   
+    cursor: pointer;
+        p{
+        color: nth($colores1, 7);  
+        }
+        &:hover {
+        transform: scale(1.1);
+        background-color: nth($colores1, 2); 
+    }
+    body.dark & {
+        background: rgb(71, 71, 71);
+        border-color: white;
+        }
+}
+
+span{
+    color: nth($colores2, 2); 
+}
+
+.aviso{
+    font-size: 13px;  
+    color: black;  
+}
+
+::-webkit-input-placeholder {
+    color: rgb(63, 63, 63);
+}
+
+::-webkit-textarea-placeholder {
+    color: rgb(63, 63, 63);
+}
+
+.formulario input:focus{
+    outline:0;
+    border: 1px solid nth($colores2, 4); 
+
+}
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid nth($colores2, 5); ;
+
+}
+
+.formulario {
+    h6 {
+        display: flex;
+        justify-content: center;
+        transition: .3s ease all;
+    }
+    body.dark & {
+        p {
+            color: white;
+        }
+        h3 {
+            color: rgb(187, 187, 187);
+        }
+    }
+}
