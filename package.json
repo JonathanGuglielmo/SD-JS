@@ -1,0 +1,19 @@
+{
+  "name": "shark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Jonathan Javier Guglielmo</h1> <h3 align=\"center\">Diseñador gráfico y desarrollador web - Argentina</h3>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanGuglielmo/JonathanGuglielmo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonathanGuglielmo/JonathanGuglielmo/issues"
+  },
+  "homepage": "https://github.com/JonathanGuglielmo/JonathanGuglielmo#readme"
+}

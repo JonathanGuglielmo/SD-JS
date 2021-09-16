@@ -1,0 +1,13 @@
+{
+    "array":[
+    {
+        "name": "Tarjeta"
+    },
+    {
+        "name": "Transferencia"
+    },
+    {
+        "name": "MercadoPago"
+    }
+]
+}

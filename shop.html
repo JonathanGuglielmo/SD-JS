@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS -->    
+<link rel="stylesheet" href="css/style.css">  
+
+<!-- Icono -->
+<link href="img/logo.ico" rel="icon">
+
+<!-- Google Fonts -->
+<link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Mukta & display = swap" rel = "hoja de estilo ">
+
+<!-- Font Awesome1 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Font Awesome2 -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Whatsapp Button -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Descripción  -->
+<meta name="description" content="Somos un estudio de diseño gráfico, web y multimedia vanguardista enfocado al alcance de sus objetivos mediante estrategias de comunicacion visual; Conscientes del equilibrio entre imagen, creatividad y comunicación para obtener la mejor solución a cada proyecto.">
+
+<!-- Keywords -->
+<meta name="keywords" content="Diseño gráfico, diseño web, diseño multimedia, comunnity manager, estudio gráfico, social media, shark-design, sharkdesign, diseño de logos, banners, flyers, edición de videos">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Shark Design - Estudio de diseño gráfico, web y multimedia">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://i.ibb.co/r7s7Mnh/1-potencia.jpg">
+<meta property="og:image:widht" content="400px">
+<meta property="og:image:height" content="200px">
+<meta property="og:url" content="https://shark-design.000webhostapp.com/">
+<meta property="og:description" content="Estudio de diseño vanguardista. La mejor solución a cada proyecto.">
+<meta property="og:author" content="Jonathan Javier Guglielmo">
+<meta property="og:locale" content="en_ES">
+
+<title>Shark Design SHOP - Diseño gráfico, web y multimedia. Soporte 24/7 365</title>
+
+<!-- Encabezado -->
+
+<header>
+    <div class="container-fluid justify-content-around">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+            <a href="index.html"><img class="logo" src="img/logo-sd.png"  alt="Logo Shark design"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="container-fluid justify-content-around">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="shop.html">SHOP<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Servicios</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/sharkdesign.arg"><i class="fab fa-instagram"></i></a>
+            </li>
+            </ul>
+            </div>
+            <div class="container-fluid justify-content-around">
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-sun" style="margin-top: -4px;"></i></span>
+                    <span><i class="fas fa-moon" style="margin-top: -4px;"></i></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- WhatsApp botton -->
+<a href="https://wa.me/+541165662861?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+</head>
+<body>
+<section>
+    <div id="shopitems" class="container">
+        <div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <aside id="shopbuy" class="col-sm-4">
+                <h2>Carrito</h2>
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <p class="text-right">Total: $ <span id="total"></span>;</p>
+                <div id="pago"></div>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="boton-confirmar" class="btn btn-danger">Confirmar compra</button>
+            </aside>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<section class="footer d-none d-lg-block">
+    <div class="container-fluid justify-content-around">
+            <a href="https://shark-design.000webhostapp.com/"><img class="logofooter" src="img/logo-sd.png" alt="Logo 2 shark design - diseño gráfico, multimedia, web y community mannager"></a>
+        <nav class="footer-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="index.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/sharkdesign.arg">Instagram</a>
+                </li>
+            </ul>
+    </div>
+</section>
+</body>
+</html>
+
+<!--ScrollReveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!--Java Script-->
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script src="js/shop.js"></script>
+
+<!-- JSON -->
+<script src="pago.json"></script>
+
+<!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+<!-- Production version -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>   
+
+<!--Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
