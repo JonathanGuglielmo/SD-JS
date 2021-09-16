@@ -1,7 +1,5 @@
 <h1 align="center">Shark Design</h1>
 
-<h1 align="center">https://shark-design.000webhostapp.com/</h1>
-
 <h3 align="center">Estudio de diseño gráfico, web y multimedia.</h3>
 
 <h2 align="center">Descripción del proyecto</h2>
