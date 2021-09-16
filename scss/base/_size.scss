@@ -1,0 +1,25 @@
+$ancho-base: 100px;
+
+.burbuja {
+    width: $ancho-base;
+    .burbuja:nth-child(1) {
+        width: $ancho-base - 20px;
+      }
+    .burbuja:nth-child(2){
+        width: $ancho-base, 2;
+    }
+    .burbuja:nth-child(3){
+        width: $ancho-base - 50px;
+    }
+    .burbuja:nth-child(4){
+        width: $ancho-base - 80px;
+    }
+    .burbuja:nth-child(5){
+        width: $ancho-base - 90px;
+    }
+    .burbuja:nth-child(6){
+        width: $ancho-base + 30px;
+    }
+
+
+}

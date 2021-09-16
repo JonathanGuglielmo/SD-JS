@@ -1,0 +1,150 @@
+/* Querys */
+
+@media only screen and (min-width: 280px) and (max-width: 1120px) {
+    
+    body {
+        overflow-x: auto;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+    
+    h6 {
+        margin-top: 3em;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        top: 0;
+        position: sticky;
+        margin-top: 0.5em;
+        margin-left: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar-light .navbar-toggler {
+        margin-top: 0.6em;
+        color: rgb(255 255 255);
+        border-color: rgb(255 255 255);
+    }
+    
+    .navbar-collapse {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 0;
+    }
+    
+    .navbar-toggler {
+        font-size: 0.8em;
+    }
+
+    .lmode {
+        margin-top: 6em;
+    }
+    
+    .carousel-indicators {
+        margin-bottom: -0.3em;
+    }
+    
+    .servicios{
+        margin-top: 1.3em !important;
+        margin-bottom: -7.3em!important;
+    }
+    
+    .servicios2 {
+        margin-bottom: 1.3em!important;
+    }
+    
+    #contactform {
+        h1 {
+            font-size: 1.3em;
+        }
+        h3 {
+            font-size: 0.8em;
+        }
+        input{
+            width: 23em;
+        }
+        textarea{
+            width: 23em;
+        }
+        .boton {
+            margin-top: 1em !important;
+        }
+    }
+
+    .dg-container {
+        height: 40em !important;
+    }  
+    .dm-container {
+        height: 40em !important;
+    }   
+
+    .dw-container {
+        height: 40em !important;
+    }  
+
+    .cm-container { 
+        height: 40em !important;
+    }  
+    
+    .dg {
+        width: 100%;
+        margin-bottom: 0.7em;
+        display: flex;
+        height: auto;
+    }
+    .dm {
+        width: 100%;
+        margin-bottom: 0.7em;
+        display: flex;
+        height: auto;
+    }
+    
+    .dw {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .cm {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+
+    .logo-img {
+        display: hidden;
+    }
+
+
+    .footer-menu {
+        list-style: none;
+    } 
+} 

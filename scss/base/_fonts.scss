@@ -1,0 +1,31 @@
+@import '../functions/mixins';
+
+
+h1{
+    @include hb(3em);
+}
+
+h2{
+    @include hf(3em);
+}
+
+h3{
+    @include hc(16px);
+}
+
+h4{
+    @include hd(1em);
+}
+
+
+h5 {
+    @include he(1em);
+}
+
+h6 {
+    @include ha(2em);
+}  
+
+p {
+    @include p(0.9em);
+}
