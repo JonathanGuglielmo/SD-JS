@@ -189,6 +189,17 @@ window.onload = function () {
 var pagoField = document.querySelector('select[name = pago]');
 const URLJSON = "pago.json"
 
+fetch('pago.json')
+.then(response => response.json())
+.then(function(data){
+    for(var i = 0; i <data.length; i++){
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = data[i].name;
+        pagoField.appendChild(opt);
+    }
+})
+
 
 $("#pago1").ready(() => { 
   $.getJSON(URLJSON, function (respuesta, estado) {
@@ -200,6 +211,7 @@ $("#pago1").ready(() => {
       }
       });
   });
+  
   var medioPago = 0
 $("#pago1").change(() => {
   var pagoIndicado = pagoField.value;
