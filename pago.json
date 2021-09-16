@@ -1,5 +1,4 @@
-{
-    "array":[
+[
     {
         "name": "Tarjeta"
     },
@@ -10,4 +9,3 @@
         "name": "MercadoPago"
     }
 ]
-}
