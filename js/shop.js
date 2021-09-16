@@ -200,18 +200,6 @@ fetch('pago.json')
     }
 })
 
-
-$("#pago1").ready(() => { 
-  $.getJSON(URLJSON, function (respuesta, estado) {
-      if(estado === "success"){
-        let misDatos = respuesta;
-        for (const dato of misDatos) {
-          $("#pago1").append(`<option>${dato.name}<option>`)
-        }  
-      }
-      });
-  });
-  
   var medioPago = 0
 $("#pago1").change(() => {
   var pagoIndicado = pagoField.value;
@@ -232,4 +220,9 @@ medioPago = procesarPago(pagoIndicado);
   alert("El medio de pago indicado es " + pagoIndicado + medioPago);
   updatePago();
 });
+
+function updatePago() {
+    $(".medio-pago").remove();
+    $(".medio-pago-div").append(`<p class="medio-pago">${medioPago}</p>`);
+}
     }
