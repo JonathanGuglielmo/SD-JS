@@ -202,8 +202,8 @@ fetch('pago.json')
 
   var medioPago = 0
 $("#pago1").change(() => {
-  var valor = pagoField.value;
-  var pagoIndicado = shopField.childNodes[valor].innerText;
+  var nombre = shopField.name;
+  var pagoIndicado = shopField.childNodes[nombre].innerText;
   function procesarPago(respond) {
     switch (respond) {
         case "Tarjeta":
