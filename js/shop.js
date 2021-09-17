@@ -203,7 +203,7 @@ fetch('pago.json')
   var medioPago = 0
 $("#pago1").change(() => {
   var pagoIndicado = pagoField.value;
-  function medioPago(respond) {
+  function procesarPago(respond) {
     switch (respond) {
         case "Tarjeta":
             return "Los datos para realizar el pago serán enviados por mail al completar la operación";
