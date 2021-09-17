@@ -154,7 +154,7 @@ window.onload = function () {
         calcularTotal();
         if (miLocalStorage.getItem('carrito') !== null) {
             carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-            alert('Su compra se ha realizado con éxito');
+            alert('Su pedido se ha cargado con éxito. En unos instantes nos contactaremos con usted para finalizar el pago');
         }
         else{ 
             alert('Debe ingresar al menos 1 servicio al carrito');
@@ -200,32 +200,4 @@ fetch('pago.json')
     }
 })
 
-  var medioPago = 0
-$("#pago1").change(() => {
-  var valor = shopField.value;
-  var pagoIndicado = shopField.childNodes[valor].innerText;
-  function procesarPago(respond) {
-    switch (respond) {
-        case "Tarjeta":
-            return "Los datos para realizar el pago serán enviados por mail al completar la operación";
-            break;
-        case "Transferencia":
-            return "Los datos para realizar el pago serán enviados por mail al completar la operación";
-            break;
-        case "MercadoPago":
-            return "El código QR será enviado por mail al completar la operación";
-            break;
-    }
-    medioPago = procesarPago(pagoIndicado);
-  alert("El medio de pago indicado es " + pagoIndicado + procesarPago);
-  updatePago();
-}
-
-    
-});
-
-function updatePago() {
-    $(".medio-pago").remove();
-    $(".medio-pago-div").append(`<p class="medio-pago">${medioPago}</p>`);
-}
     }
