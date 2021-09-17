@@ -200,29 +200,6 @@ fetch('pago.json')
     }
 })
 
-  var medioPago = 0
-$("#pago1").change(() => {
-  var valor = shopField.value;
-  var pagoIndicado = shopField.childNodes[valor].innerText;
-  function procesarPago(respond) {
-    switch (respond) {
-        case "Tarjeta":
-            return "Los datos para realizar el pago serán enviados por mail al completar la operación";
-            break;
-        case "Transferencia":
-            return "Los datos para realizar el pago serán enviados por mail al completar la operación";
-            break;
-        case "MercadoPago":
-            return "El código QR será enviado por mail al completar la operación";
-            break;
-    }
-}
-medioPago = procesarPago(pagoIndicado);
-  alert("El medio de pago indicado es " + pagoIndicado + medioPago);
-  updatePago();
-    
-});
-
 function updatePago() {
     $(".medio-pago").remove();
     $(".medio-pago-div").append(`<p class="medio-pago">${medioPago}</p>`);
